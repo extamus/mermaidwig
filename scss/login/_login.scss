@@ -1,0 +1,61 @@
+@import 'mixins';
+
+body.login {
+    background-color: #fff !important;
+
+
+    div#login {
+        width: 50vw;
+
+        .button-primary {
+            @include button($button-color);
+        }
+
+        h1 {}
+
+        h1 a {}
+
+        form#loginform {
+            background-color: $secondary !important;
+            margin-left: 10vw;
+            margin-right: 10vw;
+        }
+
+        form#loginform p {
+            // width: 100%;
+        }
+
+        form#loginform p label {
+            width: 100%;
+        }
+
+        form#loginform input {}
+
+        form#loginform input#user_login {}
+
+        form#loginform input#user_pass {}
+
+        form#loginform p.forgetmenot {}
+
+        form#loginform p.forgetmenot input#rememberme {
+            width: 16px;
+        }
+
+        form#loginform p.submit {}
+
+        form#loginform p.submit input#wp-submit {}
+
+        p#nav {}
+
+        p#nav a {
+            margin-left: 10vw;
+        }
+
+        p#backtoblog {
+            margin-left: 10vw;
+        }
+
+        p#backtoblog a {}
+
+    }
+}
