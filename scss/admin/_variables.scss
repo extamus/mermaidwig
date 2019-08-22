@@ -4,11 +4,12 @@
 // core variables
 
 $text-color: #fff !default;
-$base-color: $base-color !default;
-$icon-color: hsl(hue($base-color), 7%, 95%) !default;
-$highlight-color: #e3e6f2 !default;
-$notification-color: #d54e21 !default;
+$base-color: $primary !default;
+$icon-color: $secondary !default;
+$highlight-color: $tertiary !default;
+$notification-color: $important !default;
 
+$form-checked: $base-color;
 
 // global
 
@@ -60,3 +61,5 @@ $adminbar-recovery-exit-background: $menu-bubble-background !default;
 $adminbar-recovery-exit-background-alt: mix(black, $adminbar-recovery-exit-background, 10%) !default;
 
 $menu-customizer-text: mix($base-color, $text-color, 40%) !default;
+
+@import "admin";

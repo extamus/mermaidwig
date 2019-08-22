@@ -2,7 +2,8 @@
 
 body.login {
     background-color: #fff !important;
-
+    line-height: normal !important;
+    font-family: "Gothic A1";
 
     div#login {
         width: 50vw;
@@ -11,9 +12,28 @@ body.login {
             @include button($button-color);
         }
 
-        h1 {}
+        a {}
 
-        h1 a {}
+        h1 {
+            font-family: "Crushed";
+            color: $primary;
+        }
+
+        h1.login-site-title {
+            height: 5rem;
+            padding-top: 1rem;
+            font-size: 3rem;
+        }
+
+        h1 a {
+            background-image: url("../assets/extamus_round_hq.png");
+            height: 20vh;
+            width: 100%;
+            background-size: contain;
+            background-position: center;
+            margin-bottom: 30px;
+            display: block;
+        }
 
         form#loginform {
             background-color: $secondary !important;
@@ -27,6 +47,7 @@ body.login {
 
         form#loginform p label {
             width: 100%;
+            color: #fff;
         }
 
         form#loginform input {}

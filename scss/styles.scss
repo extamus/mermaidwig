@@ -1,7 +1,7 @@
 $primary: #df46a8;
-$secondary: #46dfa8;
-$tertiary: #46a8df;
-$important: #a846df;
+$secondary: #ff8246;
+$tertiary: #30e3ca;
+$important: #0b409c;
 
 // Mermaid Palette
 $number1: #df46a8;
@@ -12,11 +12,11 @@ $number5: #46a8df;
 $number6: #a846df;
 
 
-@import "admin/colors"; // Import admin styling
+@import "admin/variables"; // Import admin styling
 @import "login/login"; // Import login styling
 
 //Update the variables in this document, and update any additional variables or styling in _admin or _login and compile with SASS using the following:
 // 1) Navigate to plugin directory in terminal
 // 2) Run sass --watch scss:css
-// 3) Zip entirety of folder, and upload plugin to site
-// **Don't forget to update google fonts link in mermaidwig.php if custom fonts are needed
+
+//Complete instructions in readme.txt
