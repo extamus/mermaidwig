@@ -71,7 +71,6 @@ function extamus_login_title() { ?>
 function extamus_remove_menu_pages() {
     if ( ! current_user_can( 'administrator' ) ) {
   remove_menu_page( 'index.php' );                  //Dashboard
-  remove_menu_page( 'jetpack' );                    //Jetpack* 
   remove_menu_page( 'edit.php' );                   //Posts
   remove_menu_page( 'upload.php' );                 //Media
   remove_menu_page( 'edit.php?post_type=page' );    //Pages
@@ -84,6 +83,14 @@ function extamus_remove_menu_pages() {
   remove_menu_page( 'acf.php' );                    //Advanced Custom Fields
 }}
 add_action( 'admin_menu', 'extamus_remove_menu_pages' );
+
+// hide Jetpack
+function hide_jetpack() {
+
+    if (!current_user_can('administrator')) {
+        remove_menu_page( 'jetpack' );
+    }
+}
 
 // Remove dashboard widgets (uncomment to remove)
 function extamus_remove_dashboard_meta() {
