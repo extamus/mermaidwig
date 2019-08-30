@@ -7,7 +7,6 @@ To use this plugin:
 5) Update the variables in styles.scss, and update any additional variables or styling in _admin or _login and compile with SASS using the following:
      a) Navigate to plugin directory in terminal
      b) Run sass --watch scss:css
-     c) Zip entirety of folder, and upload plugin to site
-     **Don't forget to update google fonts link in mermaidwig.php if custom fonts are needed
+     **Don't forget to update google fonts link in mermaidwig.php with ALL fonts used on the site if custom fonts are needed. Fonts used on the frontend must be included in this file, or they will not render.
 6) Add logo image to /assets and update background image URL in _login stylesheet.
 7) Refresh page to see changes.
